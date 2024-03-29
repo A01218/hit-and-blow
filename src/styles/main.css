@@ -1,13 +1,17 @@
-.name-input {
-    display: none;
+html {
+    height: 100%;
+    width: 100%;
 }
-.password-input {
-    display: none;
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
-.confirm-btn {
-    display: none;
+
+.start-box-1 {
+    display: block;
 }
-.back-btn {
+.start-box-2 {
     display: none;
 }
 
@@ -16,4 +20,45 @@
 }
 .cancel-btn {
     display: none;
+}
+
+.battle-page {
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+}
+.my-part {
+    width: 50%;
+}
+.oppo-part {
+    width: 50%;
+}
+.my-nums, .oppo-nums {
+    height: 50px;
+    width: 100%;
+    border: 3px solid #777777;
+}
+.result-part {
+    width: 100%;
+    display: none;
+}
+.select-part {
+    width: 100%;
+}
+.selected-nums {
+    height: 50px;
+    width: 100%;
+    border: 3px solid #6774ff;
+}
+.num-btn-box {
+    display: flex;
+}
+.num-btn {
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    background-color: #522bff;
+}
+.selected {
+    background-color: #999;
 }

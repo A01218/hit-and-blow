@@ -8,19 +8,88 @@
 </head>
 <body>
     <div id="startPage" class="start-page">
-        <input type="text" id="nameInput" class="name-input">
-        <input type="text" id="passwordInput" class="password-input">
-        <button id="signinBtn" class="signin-btn">サインイン</button>
-        <button id="loginBtn" class="login-btn">ログイン</button>
-        <button id="confirmBtn" class="confirm-btn">決定</button>
-        <button id="backBtn" class="back-btn">戻る</button>
+        <div id="startBox1" class="start-box-1">
+            <button id="signinBtn">サインイン</button>
+            <button id="loginBtn">ログイン</button>
+        </div>
+        <div id="startBox2" class="start-box-2">
+            <h2 id="inputMode" class="input-mode"></h2><br>
+            <p>名前</p><input type="text" id="nameInput"><br>
+            <p>パスワード</p><input type="text" id="passwordInput"><br>
+            <button id="confirmBtn" class="confirm-btn">決定</button>
+            <button id="backBtn" class="back-btn">戻る</button>
+        </div>
     </div>
     <div id="homePage" class="home-page">
-        <p id="myName" class="my-name"></p>
-        <div id="roomList" class="room-list"></div>
+        <p id="userName" class="user-name"></p>
+        <div id="roomList" class="room-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>名前</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="roomTBody"></tbody>
+            </table>
+        </div>
         <button id="createBtn" class="create-btn">作成する</button>
         <button id="cancelBtn" class="cancel-btn">キャンセル</button>
     </div>
-    <div id="battlePage" class="battle-page"></div>
+    <div id="battlePage" class="battle-page">
+        <div id="myPart" class="my-part">
+            <p id="myName"></p>
+            <p id="myNums" class="my-nums"></p>
+            <div id="myLog">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>あなたの推理</th>
+                            <th>H</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTBody"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="oppoPart" class="oppo-part">
+            <p id="oppoName"></p>
+            <p id="oppoNums" class="oppo-nums"></p>
+            <div id="oppoLog">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>相手の推理</th>
+                            <th>H</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody id="oppoTBody"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="resultPart" class="result-part">
+            <p id="myResult"></p>
+            <button id="leaveBtn">ホームへ戻る</button>
+        </div>
+        <div id="selectPart" class="select-part">
+            <p id="selectedNums" class="selected-nums"></p>
+            <div id="numBtnBox" class="num-btn-box">
+                <button id="btn0" class="num-btn">0</button>
+                <button id="btn1" class="num-btn">1</button>
+                <button id="btn2" class="num-btn">2</button>
+                <button id="btn3" class="num-btn">3</button>
+                <button id="btn4" class="num-btn">4</button>
+                <button id="btn5" class="num-btn">5</button>
+                <button id="btn6" class="num-btn">6</button>
+                <button id="btn7" class="num-btn">7</button>
+                <button id="btn8" class="num-btn">8</button>
+                <button id="btn9" class="num-btn">9</button>
+                <button id="clearBtn" class="clear-btn">一文字消す</button>
+                <button id="setBtn" class="set-btn" disabled>決定</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
